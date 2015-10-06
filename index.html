@@ -47,10 +47,15 @@
 					<p>
 					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
 					</p>
+  <aside class="notes">
+        <ul>
+        <li>- moi</li>
+        <li>- interêt de l'équipe pour go</li>
+        </ul>
+    </aside>
 				</section>
 
 				<section>
-
 				<div data-markdown>
 				> From the beginning of the project, Go was designed with tools in mind.
 				> <cite>Rob Pike, 2013</cite></div>
@@ -58,7 +63,17 @@
 					<p>
 					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
 					</p>
+				<aside class="notes">
+      			  <ul>
+      			  <li>- Contrairement à certains langages ou frameworks...</li>
+      			  <li>- Nous allons pas en revue les commandes...</li>
+      			  <li>- Pour ceux qui... </li>
+      			  </ul>
+    			</aside>
+
 				</section>
+
+				<section>
 
 				<section>
 				<h1>Development tools</h1>
@@ -73,73 +88,204 @@
 						<li>go run</li>
 					</ul>
 
+
+  <aside class="notes">
+        <ul>
+        <li>- nettoie vos fichiers objets issu de l’assemblage</li>
+        <li>- compile vos packages et toutes leurs dépendances</li>
+        <li>- créé l'exécutable</li>
+        <li>- exec</li>
+        </ul>
+    </aside>
+
 				</section>
 
 				<section>
 					<h3>gofmt, Le formatteur</h3>
-					<video height="500px" autoplay loop>
+					<video height="500px" autoplay>
 					<source src="Kazam_screencast_00000.mp4" type="video/mp4">
 					</video>
 					<p>
 					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
 					</p>
+					  <aside class="notes">
+        <ul>
+        <li>la plus célèbre</li>
+        <li>plus de questions à se poser sur...</li>
+        </ul>
+    </aside>
+
 				</section>
 
 				<section>
 					<h3>goimport, Le formatteur ++</h3>
-					<video height="500px" autoplay loop>
+					<video height="500px" autoplay>
 					<source src="Kazam_screencast_00001.mp4" type="video/mp4">
 					</video>
 					<p>
 					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
 					</p>
+					<aside class="notes">
+        <ul>
+        <li>supprimer ou ajoute les imports...</li>
+        <li>fonctionne si pas d'ambiguité..</li>
+        </ul>
+    </aside>
 				</section>
 
 				<section>
 					<h3>govet, le linter</h3>
-					<video height="500px" autoplay loop>
+					<video height="500px" autoplay>
 					<source src="Kazam_screencast_00002.mp4" type="video/mp4">
 					</video>
 					<p>
 					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
 					</p>
+
+					 <aside class="notes">
+        <ul>
+        <li>linter principal de go...</li>
+        <li>retourne la liste : assignation, stringmalformat, types atomiques, lock par value, code mort..</li>
+        </ul>
+    </aside>
 				</section>
 
-				<section>
+				
 					<section>
 					<h3>gocover, le moteur de couverture</h3>
-					<video height="500px" autoplay loop>
+					<video height="500px" autoplay>
 					<source src="Kazam_screencast_00003.mp4" type="video/mp4">
 					</video>
 					<p>
 					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
 					</p>
+					<aside class="notes">
+        <ul>
+        <li>presentation go test...</li>
+        <li>capable d'afficher stats de couverture</li>
+        </ul>
+    </aside>
 					</section>
 
 					<section>
 						<h3>count covermode</h3>
 						<img src="https://blog.golang.org/cover/count.png"/>
+					<aside class="notes">
+        <ul>
+        <li>instrumentation du code...</li>
+        <li>répartition sur une échelle d'intensité avec go test -covermode=count</li>
+        </ul>
+    </aside>
 					</section>
-				</section>
+				
 
 				<section>
 					<h3>golint, le checkstyle pour go</h3>
-					<video height="500px" autoplay loop>
+					<video height="500px" autoplay>
 					<source src="Kazam_screencast_00004.mp4" type="video/mp4">
 					</video>
 					<p>
 					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
 					</p>
+					<aside class="notes">
+       				 <ul>
+       				 <li>Le checkstyle de golang, guidelines</li>
+       				 <li>retourne une liste de "suggestions"</li>
+       			 	</ul>
+  				    </aside>
 				</section>
 
 				<section>
 					<h3>goerrcheck, le checker d'erreurs</h3>
-					<video height="500px" autoplay loop>
+					<video height="500px" autoplay>
 					<source src="Kazam_screencast_00005.mp4" type="video/mp4">
 					</video>
 					<p>
 					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
 					</p>
+					<aside class="notes">
+       				 <ul>
+       				 <li>développé communauté</li>
+       				 <li>pas d'exceptions en go mais oubli fatal</li>
+       			 	</ul>
+  				    </aside>
+				</section>
+
+				</section>
+			
+				<section>
+				<section>
+				<h1>Performance tools</h1>
+				</section>
+
+				<section>
+					<h3>Memory profiler</h3>
+					<video height="500px" autoplay>
+					<source src="Kazam_screencast_00006.mp4" type="video/mp4">
+					</video>
+					<p>
+					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
+					</p>
+					<aside class="notes">
+       				 <ul>
+       				 <li></li>
+       				 <li></li>
+       			 	</ul>
+  				    </aside>
+				</section>
+
+				
+					<section>
+						<h3>CPU profiler</h3>	
+						<img src="img/cpu_profile.png" height="500px"/>
+						<p>
+					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
+					</p>
+					<aside class="notes">
+       				 <ul>
+       				 <li></li>
+       				 <li></li>
+       			 	</ul>
+  				    </aside>
+					</section>
+					<section>
+					<h3>Benchmark et optimisations locales</h3>
+					<video height="500px" autoplay>
+					<source src="Kazam_screencast_00007.mp4" type="video/mp4">
+					</video>
+					<p>
+					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
+					</p>
+					<aside class="notes">
+       				 <ul>
+       				 <li></li>
+       				 <li></li>
+       			 	</ul>
+  				    </aside>
+					</section>
+				</section>
+
+				<section>
+
+				<section>
+				<h1>Other tools</h1>
+				</section>
+
+				<section>
+					<h3>race detection</h3>
+					<ul> 
+					<li>go test -race mypkg    // to test the package</li>
+					<li>go run -race mysrc.go  // to run the source file</li>
+					<li>go build -race mycmd   // to build the command</li>
+					<li>go install -race mypkg // to install the package</li>
+					</ul>
+					<aside class="notes">
+       				 <ul>
+       				 <li>définition condition de course (ou situation de compétition) survient lors que deux threads...</li>
+       				 <li>très difficile à déceler</li>
+       				 <li>s'intègre dans la chaine de compil de go</li>
+       			 	</ul>
+  				    </aside>
 				</section>
 
 				<section>
@@ -149,53 +295,30 @@
 					<p>
 					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
 					</p>
+					<aside class="notes">
+       				 <ul>
+       				 <li>fait pour être intégré, context-sensitive</li>
+       				 <li>très rapide moins de 33ms</li>
+       				 <li>analyse les fichiers objets et les sources</li>
+       			 	</ul>
+  				    </aside>
 				</section>
 
 				<section>
-				<h1>Performance tools</h1>
+					blocking profiling, goroutine profiling, garbage collector trace, gcvis, cross compilation, etc
 				</section>
 
-				<section>
-					<h3>Memory profiler</h3>
-					<video height="500px" autoplay loop>
-					<source src="Kazam_screencast_00006.mp4" type="video/mp4">
-					</video>
-					<p>
-					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
-					</p>
 				</section>
-
-				<section>
-					<section>
-						<h3>CPU profiler</h3>	
-						<img src="img/cpu_profile.png" height="500px"/>
-						<p>
-					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
-					</p>
-					</section>
-					<section>
-					<h3>Benchmark et optimisations locales</h3>
-					<video height="500px" autoplay loop>
-					<source src="Kazam_screencast_00007.mp4" type="video/mp4">
-					</video>
-					<p>
-					<small>Proposé par <a href="http://benjaminchenebault.net">Benjamin Chenebault</a> / <a href="http://twitter.com/TheBenC_">@TheBenC_</a></small>
-					</p>
-					</section>
-				</section>
-
-				
 
 				<section style="text-align: left;">
 					<h1>THE END</h1>
 					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+						- <a href="https://github.com/BenC-/generator-go">Try github.com/BenC-/generator-go</a> <br>
+						- <a href="https://github.com/fatih/vim-go">Try vim-go</a> <br>
+						- <a href="https://github.com/DisposaBoy/GoSublime">Try GoSublime plugin</a> <br>
 					</p>
 				</section>
-
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
